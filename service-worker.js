@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/opentok-sample/precache-manifest.2fa72a330617eb9ea69d6b0f3b83c507.js"
+  "/opentok-sample/precache-manifest.842d4bfbb84d12c9bff8586e65655404.js"
 );
 
 self.addEventListener('message', (event) => {
