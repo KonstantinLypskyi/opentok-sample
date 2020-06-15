@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Router from './Router';
+import HomePage from './HomePage';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router />
+    <HomePage />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,29 +1,23 @@
 import React, { useState } from 'react';
-import qs from 'qs';
-import history from './history';
 
-export const redirectTo = ({ path, state, query, replacePrevHistory }) => {
-    const search = query && qs.stringify(query);
-    // add new flag to location state, that can be used in history go back function
-    const updatedState = { isRedirectedFromApp: true, ...state };
-    const payload = { pathname: path, state: updatedState, search: `?${search || ''}` };
-
-    return replacePrevHistory ? history.replace(payload) : history.push(payload);
-};
-
+import MeetingRoom from './MeetingRoom';
 
 const HomePage = () => {
+    const [meetingData, setMeetingData] = useState(null);
     const [isLoading, setLoading] = useState(false);
 
     const handleStartMeeting = async () => {
-        var SERVER_BASE_URL = 'https://opentok-sample12.herokuapp.com/';
+        const SERVER_BASE_URL = 'https://opentok-sample12.herokuapp.com/';
+
+        setLoading(true);
 
         const response = await fetch(SERVER_BASE_URL + '/session');
         const data = await response.json();
 
-        redirectTo({ path: '/meeting', query: data });
-        window.location.reload(false); 
+        setMeetingData(data);
     }
+
+    if (meetingData) return <MeetingRoom { ...meetingData } />
 
     if (isLoading) return <div>Loading ...</div>
 
