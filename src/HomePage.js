@@ -1,15 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import MeetingRoom from './MeetingRoom';
 
 const HomePage = () => {
     const [meetingData, setMeetingData] = useState(null);
-    const [isLoading, setLoading] = useState(false);
 
-    const handleStartMeeting = async () => {
-        const SERVER_BASE_URL = 'https://opentok-sample12.herokuapp.com/';
-
-        setLoading(true);
+    const startMeeting = async () => {
+        const SERVER_BASE_URL = 'https://opentok-routed.herokuapp.com/';
 
         const response = await fetch(SERVER_BASE_URL + '/session');
         const data = await response.json();
@@ -17,12 +14,11 @@ const HomePage = () => {
         setMeetingData(data);
     }
 
+    useEffect(startMeeting, []);
+
     if (meetingData) return <MeetingRoom { ...meetingData } />
 
-    if (isLoading) return <div>Loading ...</div>
-
-    return (
-    <button onClick={handleStartMeeting}>Start a meeting</button>
-)};
+    return <div>Loading...</div>;
+}
 
 export default HomePage;
