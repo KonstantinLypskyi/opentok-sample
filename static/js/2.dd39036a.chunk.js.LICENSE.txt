@@ -35,13 +35,13 @@ object-assign
 /*! https://mths.be/punycode v1.4.1 by @mathias */
 
 /**
- * @license OpenTok.js 2.19.3 28e9760e4
+ * @license OpenTok.js 2.18.4 a037087
  *
- * Copyright (c) 2010-2021 TokBox, Inc.
+ * Copyright (c) 2010-2020 TokBox, Inc.
  * Subject to the applicable Software Development Kit (SDK) License Agreement:
  * https://tokbox.com/support/sdk_license
  *
- * Date: Sun, 04 Apr 2021 04:58:10 GMT
+ * Date: Thu, 10 Dec 2020 00:12:01 GMT
  */
 
 /** @license React v0.20.1
