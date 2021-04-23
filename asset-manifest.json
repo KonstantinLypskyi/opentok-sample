@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/opentok-sample/static/css/main.f73502d8.chunk.css",
-    "main.js": "/opentok-sample/static/js/main.ed9bcebf.chunk.js",
-    "main.js.map": "/opentok-sample/static/js/main.ed9bcebf.chunk.js.map",
+    "main.js": "/opentok-sample/static/js/main.97c41a7e.chunk.js",
+    "main.js.map": "/opentok-sample/static/js/main.97c41a7e.chunk.js.map",
     "runtime-main.js": "/opentok-sample/static/js/runtime-main.ae1676d5.js",
     "runtime-main.js.map": "/opentok-sample/static/js/runtime-main.ae1676d5.js.map",
-    "static/js/2.dd39036a.chunk.js": "/opentok-sample/static/js/2.dd39036a.chunk.js",
-    "static/js/2.dd39036a.chunk.js.map": "/opentok-sample/static/js/2.dd39036a.chunk.js.map",
+    "static/js/2.97b15387.chunk.js": "/opentok-sample/static/js/2.97b15387.chunk.js",
+    "static/js/2.97b15387.chunk.js.map": "/opentok-sample/static/js/2.97b15387.chunk.js.map",
     "index.html": "/opentok-sample/index.html",
     "static/css/main.f73502d8.chunk.css.map": "/opentok-sample/static/css/main.f73502d8.chunk.css.map",
-    "static/js/2.dd39036a.chunk.js.LICENSE.txt": "/opentok-sample/static/js/2.dd39036a.chunk.js.LICENSE.txt"
+    "static/js/2.97b15387.chunk.js.LICENSE.txt": "/opentok-sample/static/js/2.97b15387.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ae1676d5.js",
-    "static/js/2.dd39036a.chunk.js",
+    "static/js/2.97b15387.chunk.js",
     "static/css/main.f73502d8.chunk.css",
-    "static/js/main.ed9bcebf.chunk.js"
+    "static/js/main.97c41a7e.chunk.js"
   ]
 }
